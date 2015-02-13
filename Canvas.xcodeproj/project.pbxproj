@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B5D58E91A8D7C18008491BF /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5D58E71A8D7C18008491BF /* CanvasViewController.m */; };
+		8B5D58EA1A8D7C18008491BF /* CanvasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B5D58E81A8D7C18008491BF /* CanvasViewController.xib */; };
+		D527A04880A9779837B01F7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D527A21FF54C87D34410E96A /* AppDelegate.m */; };
+		D527A64341A4EF814B869D44 /* CanvasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D527A510529F90576221DCD6 /* CanvasTests.m */; };
+		D527AB87030B57C9DA1BB773 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D527A32A66466A06C99540C3 /* LaunchScreen.xib */; };
+		D527AE8C07E7D69614325F88 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D527A4A91BC520374F930603 /* Images.xcassets */; };
+		D527AEC3CD478FD8E9A2A272 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D527A7431C51F3A20F30F30C /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D527A61D2582AF691EA8DE6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D527A10033FCBA030CFF970D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D527A4E67F2F2ED6C22756CC;
+			remoteInfo = Canvas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B5D58E61A8D7C18008491BF /* CanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
+		8B5D58E71A8D7C18008491BF /* CanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
+		8B5D58E81A8D7C18008491BF /* CanvasViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CanvasViewController.xib; sourceTree = "<group>"; };
+		D527A05F71768C4A2279A395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D527A1BCCBFC19754E9A5871 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D527A21FF54C87D34410E96A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D527A3F09F538B2D9ED23EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		D527A4A91BC520374F930603 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D527A510529F90576221DCD6 /* CanvasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasTests.m; sourceTree = "<group>"; };
+		D527A7431C51F3A20F30F30C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D527A7A6A224AA6242EA61B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		D527ACE9EE3CCDE822F74A4C /* Canvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Canvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D527AD237C0BD7C2C187C206 /* CanvasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanvasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D527A051167607E2B5B5AF8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D527A573396FEA7886063411 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D527A0ECA334E9E78AF37A4A /* CanvasTests */ = {
+			isa = PBXGroup;
+			children = (
+				D527AE985F1783747B025F57 /* Supporting Files */,
+				D527A510529F90576221DCD6 /* CanvasTests.m */,
+			);
+			path = CanvasTests;
+			sourceTree = "<group>";
+		};
+		D527A5DAD2485F5783094053 /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				D527AB271328627B67EAAF51 /* Supporting Files */,
+				D527A4A91BC520374F930603 /* Images.xcassets */,
+				D527A32A66466A06C99540C3 /* LaunchScreen.xib */,
+				D527A1BCCBFC19754E9A5871 /* AppDelegate.h */,
+				D527A21FF54C87D34410E96A /* AppDelegate.m */,
+				8B5D58E61A8D7C18008491BF /* CanvasViewController.h */,
+				8B5D58E71A8D7C18008491BF /* CanvasViewController.m */,
+				8B5D58E81A8D7C18008491BF /* CanvasViewController.xib */,
+			);
+			path = Canvas;
+			sourceTree = "<group>";
+		};
+		D527A5F3E552B5E5EF776B93 = {
+			isa = PBXGroup;
+			children = (
+				D527AE820A0294DA428D48F1 /* Products */,
+				D527A5DAD2485F5783094053 /* Canvas */,
+				D527A0ECA334E9E78AF37A4A /* CanvasTests */,
+			);
+			sourceTree = "<group>";
+		};
+		D527AB271328627B67EAAF51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D527A3F09F538B2D9ED23EDB /* Info.plist */,
+				D527A7431C51F3A20F30F30C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D527AE820A0294DA428D48F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D527ACE9EE3CCDE822F74A4C /* Canvas.app */,
+				D527AD237C0BD7C2C187C206 /* CanvasTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D527AE985F1783747B025F57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D527A7A6A224AA6242EA61B8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D527A4E67F2F2ED6C22756CC /* Canvas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D527AB5E5145324AE995C162 /* Build configuration list for PBXNativeTarget "Canvas" */;
+			buildPhases = (
+				D527AA1AE374197036805AC7 /* Sources */,
+				D527A573396FEA7886063411 /* Frameworks */,
+				D527A1133E9A61071125CD05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Canvas;
+			productName = Canvas;
+			productReference = D527ACE9EE3CCDE822F74A4C /* Canvas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D527ACC9D134D4AA742151C7 /* CanvasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D527A506B12DE3354CDA0629 /* Build configuration list for PBXNativeTarget "CanvasTests" */;
+			buildPhases = (
+				D527AFE4073AEA012123578E /* Sources */,
+				D527A051167607E2B5B5AF8A /* Frameworks */,
+				D527AA220800D92F7A53256A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D527A9219DCFC93E63733375 /* PBXTargetDependency */,
+			);
+			name = CanvasTests;
+			productName = CanvasTests;
+			productReference = D527AD237C0BD7C2C187C206 /* CanvasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D527A10033FCBA030CFF970D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Yahoo;
+			};
+			buildConfigurationList = D527A89BB6431862480A4E2E /* Build configuration list for PBXProject "Canvas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D527A5F3E552B5E5EF776B93;
+			productRefGroup = D527AE820A0294DA428D48F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D527A4E67F2F2ED6C22756CC /* Canvas */,
+				D527ACC9D134D4AA742151C7 /* CanvasTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D527A1133E9A61071125CD05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B5D58EA1A8D7C18008491BF /* CanvasViewController.xib in Resources */,
+				D527AE8C07E7D69614325F88 /* Images.xcassets in Resources */,
+				D527AB87030B57C9DA1BB773 /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D527AA220800D92F7A53256A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D527AA1AE374197036805AC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D527AEC3CD478FD8E9A2A272 /* main.m in Sources */,
+				D527A04880A9779837B01F7C /* AppDelegate.m in Sources */,
+				8B5D58E91A8D7C18008491BF /* CanvasViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D527AFE4073AEA012123578E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D527A64341A4EF814B869D44 /* CanvasTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D527A9219DCFC93E63733375 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D527A4E67F2F2ED6C22756CC /* Canvas */;
+			targetProxy = D527A61D2582AF691EA8DE6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D527A32A66466A06C99540C3 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D527A05F71768C4A2279A395 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D527A0EDFCC3D36ECF68AC16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Canvas.app/Canvas";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CanvasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		D527A43BA1D4EB2724BB9C76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D527A661AED3458C2BB29ED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Canvas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D527AE2F43DB49FF042884EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Canvas.app/Canvas";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CanvasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		D527AF29E1D35DCE6081292B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Canvas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D527AFFC8619BCFC49653B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D527A506B12DE3354CDA0629 /* Build configuration list for PBXNativeTarget "CanvasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D527A0EDFCC3D36ECF68AC16 /* Debug */,
+				D527AE2F43DB49FF042884EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D527A89BB6431862480A4E2E /* Build configuration list for PBXProject "Canvas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D527AFFC8619BCFC49653B6D /* Debug */,
+				D527A43BA1D4EB2724BB9C76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D527AB5E5145324AE995C162 /* Build configuration list for PBXNativeTarget "Canvas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D527AF29E1D35DCE6081292B /* Debug */,
+				D527A661AED3458C2BB29ED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D527A10033FCBA030CFF970D /* Project object */;
+}
