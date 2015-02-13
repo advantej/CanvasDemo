@@ -14,6 +14,7 @@
 @property (nonatomic, assign) CGPoint originalDrawerCenter;
 @property (nonatomic, assign) BOOL drawerOpen;
 
+@property (nonatomic, assign) CGFloat scaleFactor;
 
 @property (weak, nonatomic) IBOutlet UIImageView *img1;
 @property (weak, nonatomic) IBOutlet UIImageView *img2;
@@ -32,6 +33,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.scaleFactor = 1.5;
 
     [self setUpImgPanGestureRecognizer];
 
@@ -139,9 +141,13 @@
         CGPoint center = CGPointMake(panGestureRecognizer.view.center.x, panGestureRecognizer.view.center.y + self.drawerView.frame.origin.y);
         self.imageBeingPanned.center = center;
         self.originalImgCenter = self.imageBeingPanned.center;
+
+        self.imageBeingPanned.transform = CGAffineTransformMakeScale(self.scaleFactor, self.scaleFactor);
+
     } else if (panGestureRecognizer.state == UIGestureRecognizerStateChanged) {
         self.imageBeingPanned.center = CGPointMake(self.originalImgCenter.x + translation.x, self.originalImgCenter.y + translation.y);
     } else if (panGestureRecognizer.state == UIGestureRecognizerStateEnded) {
+        self.imageBeingPanned.transform = CGAffineTransformMakeScale(1, 1);
         [self configureNewImage:self.imageBeingPanned];
     }
 }
@@ -155,9 +161,11 @@
     CGPoint translation = [panGestureRecognizer translationInView:self.view];
     if (panGestureRecognizer.state == UIGestureRecognizerStateBegan) {
         self.originalImgCenter = panGestureRecognizer.view.center;
+        panGestureRecognizer.view.transform = CGAffineTransformMakeScale(self.scaleFactor, self.scaleFactor);
     } else if (panGestureRecognizer.state == UIGestureRecognizerStateChanged) {
         panGestureRecognizer.view.center = CGPointMake(self.originalImgCenter.x + translation.x, self.originalImgCenter.y + translation.y);
     } else if (panGestureRecognizer.state == UIGestureRecognizerStateEnded) {
+        panGestureRecognizer.view.transform = CGAffineTransformMakeScale(1, 1);
 
     }
 }
