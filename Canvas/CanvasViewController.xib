@@ -8,6 +8,12 @@
             <connections>
                 <outlet property="drawerHandleImage" destination="Un5-iG-W7j" id="D8U-MO-2cs"/>
                 <outlet property="drawerView" destination="wcn-jn-b5f" id="nY5-gP-cl3"/>
+                <outlet property="img1" destination="lph-90-f1P" id="zna-ul-WDh"/>
+                <outlet property="img2" destination="GBv-xz-WsT" id="iCy-xs-Lip"/>
+                <outlet property="img3" destination="26o-mz-MF8" id="hcO-82-9Mt"/>
+                <outlet property="img4" destination="fAb-5Y-m19" id="AtH-Ad-qzJ"/>
+                <outlet property="img5" destination="7XS-7d-tdc" id="Gqa-x6-6JG"/>
+                <outlet property="img6" destination="ioo-7J-CKK" id="zZ9-Cp-VlW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
