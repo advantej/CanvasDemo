@@ -8,7 +8,7 @@
 
 #import "CanvasViewController.h"
 
-@interface CanvasViewController ()
+@interface CanvasViewController () <UIGestureRecognizerDelegate>
 @property(nonatomic, weak) IBOutlet UIImageView *drawerHandleImage;
 @property (weak, nonatomic) IBOutlet UIView *drawerView;
 @property (nonatomic, assign) CGPoint originalDrawerCenter;
@@ -33,7 +33,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.scaleFactor = 1.5;
+    self.scaleFactor = 1.1;
 
     [self setUpImgPanGestureRecognizer];
 
@@ -155,18 +155,33 @@
 -(void)configureNewImage:(UIImageView *)image {
     UIPanGestureRecognizer *yetAnotherPanGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(onImagePanned:)];
     [image addGestureRecognizer:yetAnotherPanGestureRecognizer];
+
+    UIPinchGestureRecognizer *pinchGestureRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(onPinched:)];
+    [image addGestureRecognizer:pinchGestureRecognizer];
+
+    UIRotationGestureRecognizer *rotationGestureRecognizer = [[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(onRotated:)];
+    rotationGestureRecognizer.delegate = self;
+    [image addGestureRecognizer:rotationGestureRecognizer];
+}
+
+- (void)onRotated:(UIRotationGestureRecognizer *)rotateRecognizer{
+    rotateRecognizer.view.transform = CGAffineTransformMakeRotation(rotateRecognizer.rotation);
+}
+
+- (void)onPinched:(UIPinchGestureRecognizer *) pinchGestureRecognizer{
+    pinchGestureRecognizer.view.transform = CGAffineTransformMakeScale(pinchGestureRecognizer.scale, pinchGestureRecognizer.scale);
 }
 
 - (void)onImagePanned:(UIPanGestureRecognizer *)panGestureRecognizer {
     CGPoint translation = [panGestureRecognizer translationInView:self.view];
     if (panGestureRecognizer.state == UIGestureRecognizerStateBegan) {
         self.originalImgCenter = panGestureRecognizer.view.center;
-        panGestureRecognizer.view.transform = CGAffineTransformMakeScale(self.scaleFactor, self.scaleFactor);
+        panGestureRecognizer.view.transform = CGAffineTransformScale(panGestureRecognizer.view.transform, self.scaleFactor, self.scaleFactor);
     } else if (panGestureRecognizer.state == UIGestureRecognizerStateChanged) {
         panGestureRecognizer.view.center = CGPointMake(self.originalImgCenter.x + translation.x, self.originalImgCenter.y + translation.y);
     } else if (panGestureRecognizer.state == UIGestureRecognizerStateEnded) {
-        panGestureRecognizer.view.transform = CGAffineTransformMakeScale(1, 1);
-
+        //panGestureRecognizer.view.transform = CGAffineTransformMakeScale(1, 1);
+        panGestureRecognizer.view.transform = CGAffineTransformScale(panGestureRecognizer.view.transform, 0.9, 0.9);
     }
 }
 

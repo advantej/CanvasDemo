@@ -35,27 +35,27 @@
                             </connections>
                         </imageView>
                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="dead" id="lph-90-f1P">
-                            <rect key="frame" x="38" y="41" width="60" height="60"/>
+                            <rect key="frame" x="14" y="41" width="80" height="80"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="excited" id="GBv-xz-WsT">
-                            <rect key="frame" x="130" y="41" width="60" height="60"/>
+                            <rect key="frame" x="120" y="41" width="80" height="80"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="happy" id="26o-mz-MF8">
-                            <rect key="frame" x="220" y="41" width="60" height="60"/>
+                            <rect key="frame" x="220" y="41" width="80" height="80"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="tongue" id="7XS-7d-tdc">
-                            <rect key="frame" x="130" y="133" width="60" height="60"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                        </imageView>
-                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="wink" id="ioo-7J-CKK">
-                            <rect key="frame" x="220" y="133" width="60" height="60"/>
+                            <rect key="frame" x="120" y="133" width="80" height="80"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="sad" id="fAb-5Y-m19">
-                            <rect key="frame" x="38" y="133" width="60" height="60"/>
+                            <rect key="frame" x="14" y="133" width="80" height="80"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="wink" id="ioo-7J-CKK">
+                            <rect key="frame" x="220" y="133" width="80" height="80"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         </imageView>
                     </subviews>
